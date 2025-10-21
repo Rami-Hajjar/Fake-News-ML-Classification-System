@@ -61,7 +61,7 @@ Accuracy: 93.82%
 
 ### 🧠 Technologies Used
 
-- **Python 🐍**  
+- **Python**  
 - **Pandas**  
 - **NumPy**  
 - **Scikit-learn**  
