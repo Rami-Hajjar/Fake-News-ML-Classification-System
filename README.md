@@ -9,7 +9,7 @@ TF-IDF Vectorizer: Converts text data into numbers that the model can understand
 PassiveAggressiveClassifier: A fast and lightweight model used for text classification.
 
 Accuracy Score & Confusion Matrix: Helps evaluate how well the model performs.
-
+<br/>
 
 **📁 Files You'll Need**
 
@@ -22,7 +22,7 @@ Fake.csv — contains fake news articles
 
 💡 Each CSV should have a column named text which includes the news article content.
 
-
+<br/>
 **🛠️ How It Works**
 
 The data is loaded and labeled (1 for real, 0 for fake).
@@ -37,12 +37,12 @@ The model is tested and the accuracy is printed.
 
 A confusion matrix is shown to visualize the performance.
 
-
+<br/>
 **📊 Results**
 
 On the sample dataset, this model achieves an accuracy of around 90-95% depending on your data split and environment.
 
-
+<br/>
 **▶️ How to Run**
 
 This code is designed to run in Google Colab:
@@ -52,7 +52,7 @@ Open the Colab notebook or upload the .py file.
 Upload True.csv and Fake.csv when prompted.
 
 Run all the cells to train and test the model.
-
+<br/>
 
 **💬 Output Example**
 
@@ -64,7 +64,7 @@ Accuracy: 93.82%
 [[589   49]
  [  9 619]]
 
-
+<br/>
 **🧠 Technologies Used**
 
 Python 🐍
@@ -76,7 +76,7 @@ NumPy
 Scikit-learn
 
 Google Colab
-
+<br/>
 
 **🙌 Credits**
 Originally adapted from a Google Colab project. This is a lightweight example to help understand text classification basics using machine learning.
