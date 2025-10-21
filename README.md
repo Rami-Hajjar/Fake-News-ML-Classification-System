@@ -1,6 +1,7 @@
 **📰 Fake News Detector with Machine Learning**
 
 This project is a simple but effective machine learning model that helps detect fake news articles. It uses a dataset of real and fake news headlines and body texts to train a model that can predict whether a given article is real or fake.
+<br/>
 
 **🔍 What's Inside?**
 
