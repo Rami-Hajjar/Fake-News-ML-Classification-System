@@ -1,57 +1,55 @@
-📰 Fake News Detector with Machine Learning
+## 📰 Fake News Detector with Machine Learning
 
-This project is a simple but effective machine learning model that helps detect fake news articles.
-It uses a dataset of real and fake news headlines and body texts to train a model that can predict whether a given article is real or fake.
+This project is a simple but effective machine learning model that helps detect fake news articles.  
+It uses a dataset of real and fake news headlines and body texts to train a model that can predict whether a given article is **real or fake**.
 
-<br/>
-🔍 What's Inside?
+---
 
-TF-IDF Vectorizer: Converts text data into numbers that the model can understand.
-PassiveAggressiveClassifier: A fast and lightweight model used for text classification.
-Accuracy Score & Confusion Matrix: Helps evaluate how well the model performs.
+### 🔍 What's Inside?
 
-<br/>
-📁 Files You'll Need
+- **TF-IDF Vectorizer:** Converts text data into numbers that the model can understand.  
+- **PassiveAggressiveClassifier:** A fast and lightweight model used for text classification.  
+- **Accuracy Score & Confusion Matrix:** Helps evaluate how well the model performs.
+
+---
+
+### 📁 Files You'll Need
 
 Make sure you have the following CSV files in your working directory:
 
-True.csv — contains real news articles
-Fake.csv — contains fake news articles
+- `True.csv` — contains real news articles  
+- `Fake.csv` — contains fake news articles  
 
-💡 Each CSV should have a column named text, which includes the news article content.
+💡 Each CSV should have a column named **text**, which includes the news article content.
 
-<br/>
-🛠️ How It Works
+---
 
-The data is loaded and labeled (1 for real, 0 for fake).
+### 🛠️ How It Works
 
-The text data is split into training and testing sets.
+1. The data is loaded and labeled (**1 for real**, **0 for fake**).  
+2. The text data is split into **training** and **testing** sets.  
+3. A **TF-IDF vectorizer** converts text into feature vectors.  
+4. A **PassiveAggressiveClassifier** is trained on the vectors.  
+5. The model is tested, and the **accuracy** is printed.  
+6. A **confusion matrix** visualizes performance.
 
-A TF-IDF vectorizer is used to convert text into feature vectors.
+---
 
-A PassiveAggressiveClassifier is trained on the vectors.
+### 📊 Results
 
-The model is tested, and the accuracy is printed.
+On the sample dataset, this model achieves an accuracy of around **90–95%**, depending on your data split and environment.
 
-A confusion matrix is shown to visualize the performance.
+---
 
-<br/>
-📊 Results
+### ▶️ How to Run
 
-On the sample dataset, this model achieves an accuracy of around 90–95%, depending on your data split and environment.
+This code is designed to run in **Google Colab**:
 
-<br/>
-▶️ How to Run
+1. Open the Colab notebook or upload the `.py` file.  
+2. Upload `True.csv` and `Fake.csv` when prompted.  
+3. Run all the cells to train and test the model.
 
-This code is designed to run in Google Colab:
-
-Open the Colab notebook or upload the .py file.
-
-Upload True.csv and Fake.csv when prompted.
-
-Run all the cells to train and test the model.
-
-<br/>
+---
 💬 Output Example
 
 Data split successful!
@@ -59,21 +57,19 @@ Accuracy: 93.82%
 [[589 49]
 [ 9 619]]
 
-<br/>
-🧠 Technologies Used
+---
 
-Python 🐍
+### 🧠 Technologies Used
 
-Pandas
+- **Python 🐍**  
+- **Pandas**  
+- **NumPy**  
+- **Scikit-learn**  
+- **Google Colab**
 
-NumPy
+---
 
-Scikit-learn
+### 🙌 Credits
 
-Google Colab
-
-<br/>
-🙌 Credits
-
-Originally adapted from a Google Colab project.
-This is a lightweight example to help understand text classification basics using machine learning.
+Originally adapted from a **Google Colab** project.  
+This lightweight example demonstrates the **basics of text classification** using machine learning.
