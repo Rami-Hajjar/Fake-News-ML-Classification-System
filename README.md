@@ -72,4 +72,3 @@ Accuracy: 93.82%
 ### 🙌 Credits
 
 Originally adapted from a **Google Colab** project.  
-This lightweight example demonstrates the **basics of text classification** using machine learning.
