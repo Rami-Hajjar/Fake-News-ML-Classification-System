@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Fake News ML Classification (TF-IDF + Passive-Aggressive)
-"""
+""" Fake News ML Classification (TF-IDF + Passive-Aggressive) """
 
+# Libraries
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
@@ -10,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import PassiveAggressiveClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-#Colab: upload CSV files (True.csv and Fake.csv)
+# Done on Colab: upload CSV files (True.csv and Fake.csv)
 try:
     from google.colab import files
     _ = files.upload()
@@ -83,7 +82,7 @@ print("\nConfusion Matrix (rows=actual, cols=pred) labels=[0(Fake), 1(True)]:\n"
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred, target_names=["FAKE (0)", "TRUE (1)"]))
 
-# --- 8) Optional: test on your own custom text ---
+# --- 8) Optional: You can test on your own custom text if you want... ---
 custom_text = "The government announced a new policy today after a major investigation."
 custom_vec = tfidf_vectorizer.transform([custom_text])
 custom_pred = pac.predict(custom_vec)[0]
